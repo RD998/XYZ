@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title></title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <h1 id="title">B2B RATE CARD</h1>
+        <label id="select" for="country">Select the Country:</label><br>
+<select id="Country" name="country">
+  <option value="US">US</option>
+  <option value="Canada, UK, Italy, Germany, France, Spain, India, China">Canada, UK, Italy, Germany, France, Spain, India, China</option>
+  <option value="Russia, Brazil & Mexico">Russia, Brazil & Mexico</option>
+  <option value="Australia, Japan, Korea, Hong Kong, Singapore, New Zealand">Australia, Japan, Korea, Hong Kong, Singapore, New Zealand</option>
+  <option value="Indonesia, Malaysia, Philippines, Poland, Chile, Peru, Romania, Vietnam, Colombia, Czech Republic, Belgium, Taiwan, Switzerland, Ireland, Portugal">Indonesia, Malaysia, Philippines, Poland, Chile, Peru, Romania, Vietnam, Colombia, Czech Republic, Belgium, Taiwan, Switzerland, Ireland, Portugal</option>
+  <option value="UAE, Saudi Arabia, Finland, Denmark, Norway, Sweden, South Africa, Netherlands, Turkey, Nigeria, Kenya, Egypt,">UAE, Saudi Arabia, Finland, Denmark, Norway, Sweden, South Africa, Netherlands, Turkey, Nigeria, Kenya, Egypt,</option>
+</select><br><br>
+<hr>
+<label id="length" for="Surveylength">Choose the Survey Length:</label><br>
+<select id="surveylength" name="Surveylength">
+  <option value="0-5">0-5</option>
+  <option value="6-10">6-10</option>
+  <option value="11-15">11-15</option>
+  <option value="16-20">16-20</option>
+  <option value="21-25">21-25</option>
+  <option value="26-30">26-30</option>
+  <option value="31-35">31-35</option>
+  <option value="36-40">36-40</option>
+  <option value="41-45">41-45</option>
+  </select><br><br>
+
+        <hr>
+        <label id="percentage" for="IncidenceRate">Choose the Incidence Rate:</label><br>
+        <select id="incidencerate" name="IncidenceRate">
+          <option value="1%-2%">1%-2%</option>
+          <option value="3%-5%">3%-5%</option>
+          <option value="6%-9%">6%-9%</option>
+          <option value="10%-14%">10%-14%</option>
+          <option value="15%-19%">15%-19%</option>
+          <option value="20%-29%">20%-29%</option>
+          <option value="20%-39%">20%-39%</option>
+          <option value="40%-49%">40%-49%</option>
+          <option value="50%-59%">50%-59%</option>
+          <option value="60%-69%">60%-69%</option>
+          <option value="70%-79%">70%-79%</option>
+          <option value="80%-89%">80%-89%</option>
+          <option value="90%-100%">90%-100%</option>
+          </select><br><br><br><br> 
+        
+                
+
+
+          <button id="b" onclick="submit()">submit</button>
+          <h1 id="data"></h1>
+    </body>
+
+</html>
