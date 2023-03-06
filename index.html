@@ -10,7 +10,16 @@
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
     </head>
     <body>
-        <h1 id="title">B2B RATE CARD</h1>
+      
+      <span class="disc1"><img src="border.png"></span>
+        <span class="disc2"><img src="download.jpg"></span>
+          <br><br><br><br>
+          <h1 id="r">RATE CARD</h1><br>
+      <label id="rate card" for="type of rate card">Choose the type of rate card:</label><br>
+      <select id="type1" name="type of rate card">
+        <option value="B2B">B2B</option>
+        <option value="B2C">B2C</option>
+        </select><br><br>
         <label id="select" for="country">Select the Country:</label><br>
 <select id="Country" name="country">
   <option value="US">US</option>
@@ -18,7 +27,7 @@
   <option value="Russia, Brazil & Mexico">Russia, Brazil & Mexico</option>
   <option value="Australia, Japan, Korea, Hong Kong, Singapore, New Zealand">Australia, Japan, Korea, Hong Kong, Singapore, New Zealand</option>
   <option value="Indonesia, Malaysia, Philippines, Poland, Chile, Peru, Romania, Vietnam, Colombia, Czech Republic, Belgium, Taiwan, Switzerland, Ireland, Portugal">Indonesia, Malaysia, Philippines, Poland, Chile, Peru, Romania, Vietnam, Colombia, Czech Republic, Belgium, Taiwan, Switzerland, Ireland, Portugal</option>
-  <option value="UAE, Saudi Arabia, Finland, Denmark, Norway, Sweden, South Africa, Netherlands, Turkey, Nigeria, Kenya, Egypt,">UAE, Saudi Arabia, Finland, Denmark, Norway, Sweden, South Africa, Netherlands, Turkey, Nigeria, Kenya, Egypt,</option>
+  <option value="UAE, Saudi Arabia, Finland, Denmark, Norway, Sweden, South Africa, Netherlands, Turkey, Nigeria, Kenya, Egypt">UAE, Saudi Arabia, Finland, Denmark, Norway, Sweden, South Africa, Netherlands, Turkey, Nigeria, Kenya, Egypt</option>
 </select><br><br>
 <hr>
 <label id="length" for="Surveylength">Choose the Survey Length:</label><br>
@@ -55,7 +64,7 @@
                 
 
 
-          <button id="b" onclick="submit()">submit</button>
+          <button id="b" class="btn btn-success" onclick="submit()">SUBMIT</button>
           <h1 id="data"></h1>
     </body>
 
